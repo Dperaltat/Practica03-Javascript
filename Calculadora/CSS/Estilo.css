@@ -1,0 +1,30 @@
+#body{
+    background:#20232A;
+}
+
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px;
+    border-style: inset;
+    background: #20232A;
+}
+#res{
+    padding: 1%;
+    width: 323px;
+    height: 30px;
+    background: #Aebebe;
+}
+
+#boton{
+    width: 50% !important;
+    padding: 15px 35px;
+    cursor: pointer;
+    border: none;
+}
+
+#tabla{
+    background: #a01026;
+}
