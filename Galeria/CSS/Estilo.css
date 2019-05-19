@@ -1,8 +1,5 @@
 *{
     margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -19,10 +16,29 @@ img{
     box-shadow: 2px 2px 20px  #acbebe
 }
 
-.contenedor{
-    width: 100%;
-    position: absolute;
-    height: 780px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+li a:hover {
+    background-color: rgb(189, 99, 99);
 }
 
 #boton{
@@ -31,7 +47,7 @@ img{
     top: 1%;
     left: 44%;
     width: 200px;
-    height: 40px;
+    height: 28px;
     background-color: #fff;
 	border-top: 2px solid #20232a;
 	border-right: 1px solid #000;

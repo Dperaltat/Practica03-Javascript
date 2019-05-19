@@ -1,21 +1,45 @@
 body {
 	background:#ACBEBE;
-    text-align: center;
-	font-family: Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5em;
 }
 
-input {
+input{
+	text-align: left !important;
 	font-size: 1em;
 	line-height: 1.5em;
-	margin: 0;
-	padding: 0;
 	-webkit-appearance: none;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: rgb(189, 99, 99);
+}
+
 .main{
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	position: absolute;
+    top: 0%;
+    left: 31%;
 	background-color:#f4f4ef;
+	margin: 2%;
+	padding: 2%;
     box-shadow: 2px 2px 20px  #20232a;
 }
 
@@ -26,6 +50,8 @@ input {
 }
 
 .main input[type="text"] {
+	margin: 6px;
+	padding: 6px;
 	background-color: #fff;
 	border-top: 2px solid #20232a;
 	border-right: 1px solid #000;
@@ -41,6 +67,8 @@ input {
 }
 
 .main input[type="email"] {
+	margin: 6px;
+	padding: 6px;
 	background-color: #fff;
 	border-top: 2px solid #20232a;
 	border-right: 1px solid #000;
@@ -56,6 +84,8 @@ input {
 }
 
 .main input[type="date"] {
+	margin: 6px;
+	padding: 6px;
 	background-color: #fff;
 	border-top: 2px solid #20232a;
 	border-right: 1px solid #000;
@@ -71,6 +101,8 @@ input {
 }
 
 .main input[type="submit"] {
+	margin: 6px;
+	padding: 6px;
 	background-color: #ACBEBE;
 	border: 1px solid #ACBEBE;
 	border-radius: 7px;
@@ -87,6 +119,8 @@ input {
 }
 
 .main input[type="reset"] {
+	margin: 6px;
+	padding: 6px;
 	background-color: #ACBEBE;
 	border: 1px solid #ACBEBE;
 	border-radius: 7px;
