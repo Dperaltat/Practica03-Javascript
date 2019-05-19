@@ -91,8 +91,7 @@ function validarCedula(){
         }
         total = total % 10 !=0 ? 10 - total % 10 : 0;
 
-        if (x.charAt(longitud-1) == total) {
-            
+        if (x.charAt(longitud-1) == total) {           
             return true
         }else{
             alert("Su cedula no corresponde a ecuador")
@@ -109,8 +108,8 @@ function validarCorreo(){
     if(x == correo){
     }if(correo[0].length <= 3 ){
         return false
-    }else if(correo[1] != "ups.edu.ec"){
-        return false
+    }else if(correo[1] != "ups.edu.ec" && correo[1] != "est.ups.edu.ec"){
+        return false   
     }else{
         return true
     }
