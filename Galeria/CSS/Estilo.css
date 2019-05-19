@@ -5,15 +5,43 @@
     box-sizing: border-box;
 }
 
+body{
+    background:#20232A;
+}
+
 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     width: 1020px;
     height: 650px;
+    box-shadow: 2px 2px 20px  #acbebe
 }
 
 .contenedor{
     width: 100%;
-    position: relative;
+    position: absolute;
     height: 780px;
+}
+
+#boton{
+    position: absolute;
+    font-size: 1em;
+    top: 1%;
+    left: 44%;
+    width: 200px;
+    height: 40px;
+    background-color: #fff;
+	border-top: 2px solid #20232a;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+	color: #363636;
 }
 
 .botones{
@@ -27,7 +55,6 @@ img{
     font-weight: bold;
     position: absolute;
     color: beige;
-    box-shadow: 0 0 10px rgba(255,255,255,.6);
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease; 
@@ -40,10 +67,10 @@ img{
 
 .atras{
     left: 2%;
-    top: calc(50%-70px);
+    top: calc(50%);
 }
 
 .adelante{
     right: 2%;
-    top: calc(50% -70px);
+    top: calc(50%);
 }

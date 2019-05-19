@@ -5,7 +5,7 @@
     <title>Galeria</title>
     <link rel="stylesheet" href="CSS/Estilo.css">
 </head>
-<body>
+<body onload="cambiar()">
 
     <div class="contenedor">
         <div class="atras botones">
@@ -16,7 +16,9 @@
             &#62
         </div>
 
-        <img src="Imagenes/Fondo2.png" alt="imagen1">
+        <img id="ima" src="Imagenes/Fondo2.png" alt="imagen1">
+
+        <button id="boton" onclick="cambiar();">Iniciar</button></p>
     </div>
 
     <script src="JS/alternar.js"></script>    

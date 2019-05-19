@@ -13,7 +13,7 @@ function carrousel(contenedor){
             if(cont>0){
                 img.src = imagenes[cont - 1];
                 cont--;
-            }else{
+            }else if(cont==10){
                 img.src = imagenes[imagenes.length - 1];
                 cont = imagenes.length-1;
             }
@@ -21,7 +21,7 @@ function carrousel(contenedor){
             if(cont < imagenes.length -1){
                 img.src = imagenes[cont + 1];
                 cont++;
-            }else{
+            }else if(cont==0){
                 img.src = imagenes[0];
                 cont = 0;
             }
@@ -35,3 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     carrousel(contenedor);
 })
+
+
+function rand(n){
+
+    return(Math.floor(Math.random() * n + 1 ));
+}
+    
+function cambiar(){
+    document.getElementById("ima").src = imagenes[rand(10)-1];
+}
