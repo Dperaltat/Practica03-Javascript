@@ -35,9 +35,4 @@ document.addEventListener("DOMContentLoaded", () => {
     carrousel(contenedor);
 })
 
-function cambio ()
-{
-    alert("Perdon no hago nada :')")
-}
-  	
 
