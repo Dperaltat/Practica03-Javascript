@@ -36,12 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
     carrousel(contenedor);
 })
 
-
-function rand(n){
-
-    return(Math.floor(Math.random() * n + 1 ));
+function cambio ()
+{
+    alert("Perdon no hago nada :')")
 }
-    
-function cambiar(){
-    document.getElementById("ima").src = imagenes[rand(10)-1];
-}
+  	
+
