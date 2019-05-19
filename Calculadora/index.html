@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chracter="uft_8" />
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="CSS/Estilo.css" type="text/css">
+    </head>
+    <script type="text/javascript" src="JS/Funcion.js"></script>
+    <body id="body">
+
+        <div id="main">
+            <form name="form">
+                <input class="textview" id="res" name="textview">
+            </form>
+            <table id="tabla">
+                <colgroup>
+                    <col style="width:0,5%">
+                    <col style="width:0,5%">
+                    <col style="width:0,5%">
+                    <col style="width:0,5%">
+                    <col style="width:0,5%">
+                </colgroup>
+                <tr>
+                    <td><input id ="boton" type="button" value="C" onclick="limpiar()"></td>
+                    <td><input id ="boton" type="button" value="<" onclick="borrar()"></td>
+                    <td><input id ="boton" type="button" value="/" onclick="insertar('/')"></td>
+                    <td><input id ="boton" type="button" value="X" onclick="insertar('*')"></td>
+                </tr>
+                <tr>
+                    <td><input id ="boton" type="button" value="7" onclick="insertar(7)"></td>
+                    <td><input id ="boton" type="button" value="8" onclick="insertar(8)"></td>
+                    <td><input id ="boton" type="button" value="9" onclick="insertar(9)"></td>
+                    <td><input id ="boton" type="button" value="-" onclick="insertar('-')"></td>
+                </tr>
+                <tr>
+                    <td><input id ="boton" type="button" value="4" onclick="insertar(4)"></td>
+                    <td><input id ="boton" type="button" value="5" onclick="insertar(5)"></td>
+                    <td><input id ="boton" type="button" value="6" onclick="insertar(6)"></td>
+                    <td><input id ="boton" type="button" value="+" onclick="insertar('+')"></td>
+                </tr>
+                <tr>
+                    <td><input id ="boton" type="button" value="1" onclick="insertar(1)"></td>
+                    <td><input id ="boton" type="button" value="2" onclick="insertar(2)"></td>
+                    <td><input id ="boton" type="button" value="3" onclick="insertar(3)"></td>
+                    <th rowspan="2"><input id ="boton" style="height:106" type="button" value="=" onclick="igual()"></th>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id ="boton" style="width:106" type="button" value="0" onclick="insertar(0)"></td>
+                    <td><input id ="boton" type="button" value="." onclick="insertar('.')"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
